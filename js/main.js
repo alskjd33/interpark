@@ -35,7 +35,7 @@ window.onload = function () {
       prevEl: ".shopping .sw-prev",
     },
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     grid: {
       rows: 3,
       fill: "row",
@@ -109,33 +109,32 @@ window.onload = function () {
     },
   });
   // 티켓의 스와이퍼 기능적용
-  const swticket = new Swiper(".sw-ticket", {
+  const swTicket = new Swiper(".sw-ticket" ,{
+    slidesPerView: 2,
     navigation: {
       nextEl: ".tour .sw-next",
       prevEl: ".tour .sw-prev",
     },
-    loop: true,
-    slidesPerView: 1,
-    grid: {
-      rows: 3,
-      fill: "row",
-    },
-    spaceBetween: 10,
-    1024: {
-      spaceBetween: 32,
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      grid: {
-        rows: 1,
+    loop:true,
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+       
+       
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      
+     
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView:4,
+        
+      
       },
     },
-    1280: {
-      spaceBetween: 26,
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      grid: {
-        rows: 1,
-      },
-    },
-  });
+  })
 };
