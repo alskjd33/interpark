@@ -137,4 +137,30 @@ window.onload = function () {
       },
     },
   })
+// live스와퍼
+const swLive = new Swiper(".sw-live" , {
+  slidesPerView:4,
+  spaceBetween: 27,
+
+  breakpoints: {
+    320: {
+      spaceBetween: 30,
+      slidesPerView: 1,
+    },
+    400: {
+      spaceBetween: 30,
+      slidesPerView: 1,
+    },
+    510: {
+      spaceBetween: 25,
+      slidesPerView: 2,
+    },
+     
+    1025:{
+      spaceBetween: 26,
+      slidesPerView:3,
+    }
+  },
+  
+})
 };
