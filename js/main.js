@@ -176,4 +176,79 @@ window.onload = function () {
       },
     },
   });
+  // books스와이퍼
+  const books = new Swiper(".sw-books", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    grid: {
+      rows: 5,
+      fill:"row"
+    },
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+
+    loop: true,
+    breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 3,
+          spaceBetween: 30,
+          grid: {
+            rows: 1,
+          },
+        },
+        1280: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          spaceBetween: 27,
+          grid: {
+            rows: 1,
+          },
+      },
+    },
+  });
+  // 이벤트스와이퍼
+  const event = new Swiper(".sw-event", {
+    breakpoints: {
+      760: {
+        slidesPerView: 2,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+    },
+      1006: {
+        slidesPerView: 3,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+    },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+    },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+    },
+    }
+  })
 };

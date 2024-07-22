@@ -1,0 +1,9 @@
+@charset "utf-8";
+.event-img{
+    border: 1px solid rgba(0, 0,0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sw-event .event-img img {
+    width: 100%;
+}

@@ -82,6 +82,11 @@
     font-size: 8px;
   }
 }
+@media screen and (max-width: 760px) {
+.event-img img{
+  width: calc(100% /2);
+}
+}
 @media screen and (max-width: 680px) {
   .live .section-slide {
     height: 400px;
@@ -120,5 +125,13 @@
   }
   .header .inner {
     height: 150px;
+  }
+  .books-img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 320px){
+  .books-img{
+    height: 160px;
   }
 }
