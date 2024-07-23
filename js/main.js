@@ -1,4 +1,18 @@
 window.onload = function () {
+  // //
+  // // topbt기능
+  // const topBtn = document.querySelector("#gotop");
+  // topBtn.addEventListener("click", function (e) {
+  //   e.preventDefault();
+  //   if (window.scrollY !== 0) {
+  //     // 현재 스크롤 위치가 0이 아니면 top으로 스크롤
+  //     window.scrollTo({
+  //       top: 0,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // });
+
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
@@ -182,7 +196,7 @@ window.onload = function () {
     spaceBetween: 20,
     grid: {
       rows: 5,
-      fill:"row"
+      fill: "row",
     },
     navigation: {
       nextEl: ".ticket .sw-next",
@@ -191,30 +205,29 @@ window.onload = function () {
 
     loop: true,
     breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-          
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
         },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
+      },
+      1280: {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
         },
-        1024: {
-          slidesPerView: 4,
-          slidesPerGroup: 3,
-          spaceBetween: 30,
-          grid: {
-            rows: 1,
-          },
-        },
-        1280: {
-          slidesPerView: 5,
-          slidesPerGroup: 5,
-          spaceBetween: 27,
-          grid: {
-            rows: 1,
-          },
       },
     },
   });
@@ -227,28 +240,28 @@ window.onload = function () {
         grid: {
           rows: 1,
         },
-    },
+      },
       1006: {
         slidesPerView: 3,
         spaceBetween: 27,
         grid: {
           rows: 1,
         },
-    },
+      },
       1280: {
         slidesPerView: 4,
         spaceBetween: 27,
         grid: {
           rows: 1,
         },
-    },
+      },
       1280: {
         slidesPerView: 4,
         spaceBetween: 27,
         grid: {
           rows: 1,
         },
+      },
     },
-    }
-  })
+  });
 };

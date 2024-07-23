@@ -81,6 +81,16 @@
   html {
     font-size: 8px;
   }
+  .event .inner{
+    border-bottom: none;
+  }
+  .footer-menu ,.footer-main{
+    display: none;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  
 }
 @media screen and (max-width: 760px) {
 .event-img img{
